@@ -101,3 +101,34 @@ input, select {
   transform: scale(1.01);
   transition: 0.2s;
 }
+/* CONTENITORE IMMAGINE */
+#preview {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* SCANNER LINE */
+.scanner-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #00f5ff, transparent);
+  box-shadow: 0 0 15px #00f5ff;
+  animation: scan 2s linear;
+}
+
+/* ANIMAZIONE SCANSIONE */
+@keyframes scan {
+  0% {
+    top: 0%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
