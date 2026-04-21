@@ -45,3 +45,15 @@ function analyze() {
 
   speak(response);
 }
+function startScanner() {
+  const container = document.querySelector(".preview").parentElement;
+
+  const line = document.createElement("div");
+  line.classList.add("scanner-line");
+
+  container.appendChild(line);
+
+  setTimeout(() => {
+    line.remove();
+  }, 2000);
+}
