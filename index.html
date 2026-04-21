@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision AI</title>
 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1 class="title">VISION AI</h1>
+    <p class="subtitle">Assistente visivo in sviluppo</p>
+
+    <!-- CAMERA INPUT -->
+    <div class="card">
+      <h2>📸 Scatta o carica un'immagine</h2>
+      <input type="file" accept="image/*" capture="environment" id="camera">
+      <img id="preview" class="preview">
+    </div>
+
+    <!-- CONTROL PANEL -->
+    <div class="card">
+      <h2>🧠 Analisi</h2>
+
+      <select id="mode">
+        <option value="auto">Modalità automatica</option>
+        <option value="bar">Bar</option>
+        <option value="school">Scuola</option>
+        <option value="object">Oggetto</option>
+      </select>
+
+      <button onclick="analyze()" class="btn">Analizza</button>
+    </div>
+
+    <!-- OUTPUT -->
+    <div class="card output">
+      <h2>💬 Risultato</h2>
+      <p id="result">In attesa di analisi...</p>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
