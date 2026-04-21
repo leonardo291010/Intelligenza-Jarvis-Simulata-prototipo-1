@@ -23,6 +23,7 @@ function speak(text) {
 
 /* LOGICA ANALISI (PER ORA BASE) */
 function analyze() {
+  startScanner()
   const mode = document.getElementById("mode").value;
 
   let response = "";
