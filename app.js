@@ -1,3 +1,9 @@
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js")
+    .then(() => console.log("Service Worker attivo"))
+    .catch(err => console.log("Errore SW:", err));
+}
+
 /* PREVIEW IMMAGINE */
 const camera = document.getElementById("camera");
 const preview = document.getElementById("preview");
